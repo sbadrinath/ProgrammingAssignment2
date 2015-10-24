@@ -22,7 +22,7 @@ cacheSolve <- function(x, ...) {
 ## get the inverse matrix stored in cache
    m <- x$getinvmatrix()
 # check if gotten value in the above line is NOT null
-# else create the matrix 
+# else create the inverse matrix 
    if (!is.null(m)) {
       message("getting cached data")
       return(m)
