@@ -7,13 +7,13 @@ makeCacheMatrix <- function(x = matrix()) {
      m <<- NULL
    }
 # Return the cached matrix
-   get <- function() x
+  get <- function() x
 # setmatrix function store the inverted matrix (which is passed as argument) in cache
-   setmatrix <- function(invmatrix) m <<- invmatrix
+  setmatrix <- function(invmatrix) m <<- invmatrix
 # getmatrix function returns the inverted matrix stored in cache
-   getmatrix <- function() m
+  getmatrix <- function() m
 # return the created functions
-   list(set = set, get = get, setinvmatrix = setmatrix, getinvmatrix = getmatrix)
+  list(set = set, get = get, setinvmatrix = setmatrix, getinvmatrix = getmatrix)
 }
 # This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
 # If the inverse has already been calculated (and the matrix has not changed),
